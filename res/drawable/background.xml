@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Project		: aMuse
+Team		: dVruhero
+Page		: background.xml
+Description	: Android application style (background application)
+Released	: April 25th, 2013 (Second Deliverable)
+-->
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<stroke
+	    android:width="0dp"
+	    android:color="#99e78b24" />
+	<corners
+	    android:radius="0dp" />
+	<gradient
+	    android:startColor="#FFFFFFFF"
+	    android:endColor="#80CCCCCC"
+		android:angle="270" />
+</shape>

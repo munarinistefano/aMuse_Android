@@ -1,0 +1,134 @@
+<!--
+Project		: aMuse
+Team		: dVruhero
+Page		: activity_home.xml
+Description	: Android application layout (homepage)
+Released	: April 25th, 2013 (Second Deliverable)
+-->
+
+
+<!-- DEFINIZIONE DEL LAYOUT "CONTENITORE" -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:background="@color/white"
+	android:gravity="center" >
+
+    <!-- CONTENUTO DEL LAYOUT "CONTENITORE" -->
+    
+    <!-- LAYOUT INTERNO CHE DISPONE GLI OGGETTI VERTICALMENTE -->
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/InnerRelativeLayout"
+        android:layout_below="@+id/Photo"
+        android:gravity="center"
+        android:orientation="vertical" >
+    
+        <!-- CONTENUTO DEL LAYOUT INTERNO -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="@string/description_m"
+            android:textSize="23dp"
+            android:textStyle="italic"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:gravity="center"
+        	android:orientation="vertical" >
+        </LinearLayout>
+        
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:textSize="25sp"
+            android:background="#E6E6E6"
+            android:hint="email@example.com"
+            android:textColor="#191919"
+           	android:textStyle="bold"
+           	android:paddingLeft="5dp"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:gravity="center"
+        	android:orientation="vertical" >
+        </LinearLayout>
+    	
+
+        
+		<Button
+		    android:id="@+id/button1"
+		    style="@style/red_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="60dp"
+		    android:paddingLeft="35dp"
+		    android:paddingRight="35dp"
+		    android:background="@drawable/red_button"
+		    android:fontFamily="Droid Sans"
+		    android:text="Send email"
+		    android:textSize="20dp"
+		    android:textStyle="bold" >
+
+		</Button>
+
+
+
+   
+	</LinearLayout>
+
+    <!-- LAYOUT INTERNO CHE DISPONE IL FOOTER SUL FONDO DELLO SCHERMO -->
+    
+	<RelativeLayout
+		android:id="@+id/InnerRelativeLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+ 		android:layout_centerInParent="true"
+ 		android:gravity="center" >
+
+	    <!-- CONTENUTO DEL LAYOUT INTERNO -->
+	    
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingBottom="15dp"
+			android:paddingTop="20dp"
+			android:text="@string/credits"
+			android:textColor="@color/black" />
+
+	</RelativeLayout>
+
+	<ImageView
+	    android:id="@+id/Photo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:maxHeight="250dp"
+	    android:maxWidth="250dp"
+	    android:paddingTop="20dp"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/title" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip"
+    android:background="@color/white" >
+    
+    
+	<ImageView
+        android:id="@+id/WorkIMG"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+		android:scaleType="centerInside"
+		android:src="@drawable/ic_launcher" />
+    
+	<LinearLayout
+	    android:id="@+id/LinearLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_alignBaseline="@+id/WorkIMG"
+		android:layout_alignBottom="@+id/WorkIMG"
+		android:layout_toRightOf="@+id/WorkIMG"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+ 
+		<TextView
+		    android:id="@+id/name"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="3dp"
+		    android:text="name"
+		    android:textColor="@color/black"
+		    android:textSize="16dp"
+		    android:textStyle="bold" />
+ 
+		<TextView
+		    android:id="@+id/exhibition"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="5dp"
+		    android:text="exhibition"
+		    android:textColor="@color/black" />
+    
+	</LinearLayout>
+
+	<ImageView
+	    android:id="@+id/DeleteIMG"
+	    android:layout_width="45dp"
+	    android:layout_height="45dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/ic_delete" />
+ 
+</RelativeLayout>

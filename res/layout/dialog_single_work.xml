@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    			<TextView
+    			    android:id="@+id/author"
+    			    android:layout_width="fill_parent"
+    			    android:layout_height="wrap_content"
+    			    android:gravity="center"
+    			    android:paddingLeft="10dip"
+    			    android:paddingRight="10dip"
+    			    android:paddingTop="10dip"
+    			    android:paddingBottom="5dip"
+    			    android:text="Description"
+    			    android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/black" />
+    
+    <ImageView
+        android:id="@+id/imageview1"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:background="#FFFFBB33" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Ciao abdullaaaaaa"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/black" />
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    
+    <Button
+		    android:id="@+id/button2"
+		    style="@style/red_button"
+		    android:layout_width="120dp"
+		    android:layout_height="50dp"
+		    android:padding="10dp"
+		    android:background="@drawable/red_button"
+		    android:fontFamily="Droid Sans"
+		    android:text="Go back"
+		    android:textSize="18dp"
+		    android:textStyle="bold" >
+	</Button>        
+
+    <Button
+		    android:id="@+id/button1"
+		    style="@style/red_button"
+		    android:layout_width="120dp"
+		    android:layout_height="50dp"
+		    android:padding="10dp"
+		    android:background="@drawable/red_button"
+		    android:fontFamily="Droid Sans"
+		    android:text="ADD"
+		    android:textSize="18dp"
+		    android:textStyle="bold" >
+	</Button>
+    </LinearLayout>
+</LinearLayout>
